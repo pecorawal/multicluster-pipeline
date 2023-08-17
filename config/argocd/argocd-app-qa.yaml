@@ -6,8 +6,8 @@ metadata:
 spec:
   project: clouds-api
   source:
-    repoURL: 'https://github.com/pecorawal/Openshift-Multi-Cluster-management.git'
-    path: chapter10/clouds-api-gitops/overlays/qa
+    repoURL: 'https://github.com/pecorawal/multicluster-pipeline.git'
+    path: gitops-kustomize/overlays/qa
     targetRevision: qa
   destination:
     server: 'https://kubernetes.default.svc'
