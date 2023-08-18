@@ -21,3 +21,21 @@ spec:
           ports:
             - containerPort: 8080
               protocol: TCP
+          resources:
+            requests:
+              cpu: 50m 
+              memory: 200Mi 
+            limits:
+              cpu: 100m 
+              memory: 400Mi 
+          readinessProbe:
+            httpGet:
+              path: /clouds
+              port: 8080
+            initialDelaySeconds: 15
+            timeoutSeconds: 1
+          livenessProbe:
+            tcpSocket:
+              port: 8080
+            initialDelaySeconds: 15
+            timeoutSeconds: 1
