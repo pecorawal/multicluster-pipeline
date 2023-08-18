@@ -144,7 +144,7 @@ func returnAllClouds(w http.ResponseWriter, r *http.Request) {
 }
 
 func homePage(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, "Welcome to the HomePage! - version:alpha")
+	fmt.Fprintf(w, "Welcome to the HomePage! - version:v1.0")
 	fmt.Println("Endpoint Hit: homePage")
 }
 
