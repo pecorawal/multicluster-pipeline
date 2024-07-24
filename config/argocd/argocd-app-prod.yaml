@@ -7,7 +7,7 @@ spec:
   project: clouds-api
   source:
     repoURL: 'https://github.com/pecorawal/multicluster-pipeline.git'
-    path: gitops-kustomize/overlays/preprod
+    path: gitops-kustomize/overlays/prod
     targetRevision: main
   destination:
     server: 'https://kubernetes.default.svc'
